@@ -1,0 +1,26 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title>My homework3</title>
+		<script type = "text/javascript">
+			var Celsius;//攝氏
+			var Fahrenheit;//華氏
+			var getInt_Celsius;
+			var getInt_Fahrenheit;
+			var choose;
+			//f = 9/5 C +32
+			//c = (f-32) * 5/9
+			Celsius = window.prompt("請輸入攝氏溫度");
+			Celsius = parseInt(Celsius);//change to Int
+			function Switch(getInt_Celsius) {
+				 getInt_Fahrenheit = 9/5 * getInt_Celsius + 32;
+				 return getInt_Fahrenheit;
+			}
+			
+			document.writeln("<h1>華氏溫度:" + Switch(Celsius) + "°F</h1>");
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
